@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="asset/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Omega Bakery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand py-0 my-0" href="home.html"
+          ><img
+            src="asset/menu-bread/Logo homepage.png"
+            alt="website logo omega"
+            id="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#site_navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="site_navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline success" type="submit">
+              <span class="material-symbols-outlined align-middle">
+                search
+              </span>
+            </button>
+          </form>
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-but me-3">
+              <a href="checkout.html" class="btn btn-outline-light"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Cart
+              </a>
+            </li>
+            <li class="nav-but">
+              <a class="btn btn-outline-light" href="log-in.html">Log-out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 1st row menu-hero -->
+    <div class="container mt-5">
+      <div class="row gy-3 row-cols-1 row-cols-md-2">
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/sourdough.png"
+              class="card-img-special img-fluid"
+              alt="sourdough"
+            />
+            <div class="card-header">
+              <b> Sourdough Bread</b><br />
+              <span class="text-secondary">₱250.00 (1kg)</span>
+            </div>
+
+            <div class="card-body">
+              <!--checkbox code  -->
+              <form>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a1"
+                    id="a1"
+                  />
+                  <label class="form-check-label" for="a1">
+                    Country Loaf
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a2"
+                    id="a2"
+                  />
+                  <label class="form-check-label" for="a2"> Whole Wheat </label>
+                </div>
+                <!--button  -->
+                <a href="#" class="btn btn-danger"
+                  ><span class="material-symbols-outlined align-middle">
+                    shopping_cart
+                  </span>
+                  Add to Cart
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- RYE BREAD-->
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Danish Rye.png"
+              class="card-img-special img-fluid"
+              alt="Rye bread"
+            />
+            <div class="card-header">
+              <b>Danish Rye Bread</b><br />
+              <span class="text-secondary">₱200.00 (300gr)</span>
+            </div>
+            <div class="card-body">
+              <!--checkbox code  -->
+              <form>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a3"
+                    id="a3"
+                  /><label class="form-check-label" for="a3"> Dark Rye</label>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a4"
+                    id="a4"
+                  /><label class="form-check-label" for="a4">Caraway Rye</label>
+                </div>
+                <!--button  -->
+                <a href="#" class="btn btn-danger"
+                  ><span class="material-symbols-outlined align-middle">
+                    shopping_cart
+                  </span>
+                  Add to Cart
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- BRIOCHE -->
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Brioche.png"
+              class="card-img-special img-fluid"
+              alt="brioche"
+            />
+            <div class="card-header">
+              <b> Brioche Bread</b><br />
+              <span class="text-secondary">₱346.00 (500gr)</span>
+            </div>
+            <div class="card-body">
+              <!--checkbox code  -->
+              <form>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a5"
+                    id="a5"
+                  /><label class="form-check-label" for="a5">
+                    Plain Brioche
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a6"
+                    id="a6"
+                  /><label class="form-check-label" for="a6"
+                    >ChocoChip Brioche</label
+                  >
+                </div>
+                <!--button  -->
+                <a href="#" class="btn btn-danger"
+                  ><span class="material-symbols-outlined align-middle">
+                    shopping_cart
+                  </span>
+                  Add to Cart
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- BAGUETTE -->
+
+        <div class="col-lg-3">
+          <div class="card h-100% text-center px-2">
+            <img
+              src="asset/menu-bread/French Baguette.png"
+              class="card-img-special img-fluid"
+              alt="French Baguette"
+            />
+            <div class="card-header">
+              <b>French Baguette</b><br />
+              <span class="text-secondary">₱150.00 (300gr)</span>
+            </div>
+            <div class="card-body">
+              <!--checkbox code  -->
+              <form>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a7"
+                    id="a7"
+                  /><label class="form-check-label" for="a7"
+                    ><abbr>French Baguette</abbr></label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    name="a4"
+                    id="a4"
+                  /><label class="form-check-label" for="a4"
+                    >Multigrain Baguette</label
+                  >
+                </div>
+                <!--button  -->
+                <a href="#" class="btn btn-danger"
+                  ><span class="material-symbols-outlined align-middle">
+                    shopping_cart
+                  </span>
+                  Add to Cart
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2nd row menu-hero-->
+    <div class="container mt-3">
+      <div class="row gy-3 row-cols-1 row-cols-md-2">
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Whole Wheat Loaf.png"
+              class="card-img-special img-fluid"
+              alt="wheat loaf"
+            />
+            <div class="card-header">
+              <b>Whole Wheat Loaf</b> |
+              <span class="text-secondary">₱375.00</span>
+            </div>
+            <div class="card-body">
+              <p>(1kg)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Multi-grain Boule.png"
+              class="card-img-special img-fluid"
+              alt="multi-grain boule"
+            />
+            <div class="card-header">
+              <b>Multi-grain Boule</b> |
+              <span class="text-secondary">₱399.00</span>
+            </div>
+            <div class="card-body">
+              <p>(1kg)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Almond Croissant.png"
+              class="card-img-special img-fluid"
+              alt="Almond Croissant"
+            />
+            <div class="card-header">
+              <b>Almond Croissant</b> |
+              <span class="text-secondary">₱555.00</span>
+            </div>
+            <div class="card-body">
+              <p>(4 pieces)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Cinnamon Rolls.png"
+              class="card-img-special img-fluid"
+              alt="Cinnamon Rolls"
+            />
+            <div class="card-header">
+              <b>Cinnamon Rolls</b> |
+              <span class="text-secondary">₱875.00</span>
+            </div>
+            <div class="card-body">
+              <p>(6 pieces)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3rd row menu-hero-->
+    <div class="container mt-3">
+      <div class="row gy-3 row-cols-1 row-cols-md-2">
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Bavarian Pretzel.png"
+              class="card-img-special img-fluid"
+              alt="Bavarian Pretzel"
+            />
+            <div class="card-header">
+              <b>Bavarian Pretzel</b><br />
+              <span class="text-secondary">₱225.00</span>
+            </div>
+            <div class="card-body">
+              <p>(large)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Pain au Chocolat.png"
+              class="card-img-special img-fluid"
+              alt="Pain au Chocolat"
+            />
+            <div class="card-header">
+              <b>Pain au Chocolat</b><br />
+              <span class="text-secondary">₱729.00</span>
+            </div>
+            <div class="card-body">
+              <p>(4 pieces)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Cream Puff.png"
+              class="card-img-special img-fluid"
+              alt="Cream Puff"
+            />
+            <div class="card-header">
+              <b>Cream Puff</b><br />
+              <span class="text-secondary">₱200.00</span>
+            </div>
+            <div class="card-body">
+              <p>(per pieces)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center px-2">
+            <img
+              src="asset/menu-bread/Fruit Danish.png"
+              class="card-img-special img-fluid"
+              alt="Fruit Danish"
+            />
+            <div class="card-header">
+              <b>Fruit Danish</b><br />
+              <span class="text-secondary">₱499.00</span>
+            </div>
+            <div class="card-body">
+              <p>(3 pieces)</p>
+            </div>
+            <!--button  -->
+            <span
+              ><a href="#" class="btn btn-danger"
+                ><span class="material-symbols-outlined align-middle">
+                  shopping_cart
+                </span>
+                Add to Cart
+              </a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container mt-5 text-center">
+      <div class="socials d-flex justify-content-center align-items-center">
+        <a class="mx-2" href="https://www.facebook.com/" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        |
+        <a class="mx-2" href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        |
+        <a class="mx-2" href="https://www.pinterest.ph/" target="_blank"
+          ><i class="fa-brands fa-pinterest"></i
+        ></a>
+      </div>
+      <p>
+        Induldge in Delight: Sweet creations from our oven to your heart. <br />
+        Savor the flavor of freshly baked bliss at
+        <strong> Omega Bakery</strong>
+      </p>
+      <p>
+        <strong
+          ><a href="about.html" class="footer-link">Our Story</a> |
+          <a href="menu.html" class="footer-link">Product</a> |
+          <a href="about.html" class="footer-link">FAQS</a></strong
+        >
+      </p>
+      <p>
+        <a href="https://www.amc.com/terms" target="_blank" class="footer-link"
+          >Terms and Conditions</a
+        >
+        <a
+          href="https://www.amc.com/privacy"
+          target="_blank"
+          class="footer-link"
+          >Privacy Policy</a
+        >
+      </p>
+      <p>Copyright (C)2023 Omega Bakery. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
