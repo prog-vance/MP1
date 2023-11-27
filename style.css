@@ -11,6 +11,9 @@ body {
 #logo {
   width: 100px;
 }
+#room1 {
+  z-index: 1000000;
+}
 a.btn {
   background: linear-gradient(30deg, #be9906fb, #985c08a9);
   color: black;
@@ -22,9 +25,7 @@ a.btn {
 #faq {
   background-color: #985c0861;
 }
-.accordion-button {
-  /* background: linear-gradient(30deg, #be9906fb, #985c0844); */
-}
+
 li.nav-item {
   font-size: 30px;
   font-weight: bold;
